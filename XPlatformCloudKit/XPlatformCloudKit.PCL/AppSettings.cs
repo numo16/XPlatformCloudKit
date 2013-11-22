@@ -91,7 +91,6 @@ namespace XPlatformCloudKit
 
 				#region JsonServiceSettings
 				public const bool EnableJsonService = true;
-				public const int JsonMaxItems = -1;
 
 				public static readonly JsonSource[] JsonAddressCollection =
 				{
