@@ -3,6 +3,7 @@
 */
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -87,6 +88,16 @@ namespace XPlatformCloudKit
         public const string RemoteRssSourceUrl = "";
 
         #endregion
+
+				#region JsonServiceSettings
+				public const bool EnableJsonService = true;
+				public const int JsonMaxItems = -1;
+
+				public static readonly JsonSource[] JsonAddressCollection =
+				{
+					new JsonSource{Url = "http://localhost/values", Group = "JSON API Example"}
+				};
+				#endregion
 
         #region LocalItemsFileService Settings
         public const bool EnableLocalItemsFileService = true; //Use Items contained in LocalItemsFile.xml

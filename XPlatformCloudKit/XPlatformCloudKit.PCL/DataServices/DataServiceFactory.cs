@@ -25,6 +25,9 @@ namespace XPlatformCloudKit.DataServices
             if (AppSettings.EnableLocalItemsFileService)
                 enabledDataServices.Add(new LocalItemsFileService());
 
+						if(AppSettings.EnableJsonService)
+								enabledDataServices.Add(new JsonService());
+
             return enabledDataServices;
         }
     }
